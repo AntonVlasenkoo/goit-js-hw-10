@@ -17,6 +17,9 @@ function fetchInput() {
     fetchCountries(searchQuery)
       .then(countre => MarkupGenerator(countre))
       .catch(error => console.log(error));
+  } else {
+    infoRefs.innerHTML = '';
+    listRefs.innerHTML = '';
   }
 }
 
